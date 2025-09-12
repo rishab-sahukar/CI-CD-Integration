@@ -1,0 +1,10 @@
+---
+applications:
+  - name: sap.ui.build.cicd
+    memory: 256M
+    disk_quota: 512M
+    buildpacks:
+      - nodejs_buildpack
+    path: dist
+    routes:
+      - route: sap.ui.build.cicd.cfapps.us10.hana.ondemand.com
